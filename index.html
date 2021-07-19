@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>hst-cais</title>
+
+
+<style>
+body{
+  background:#57272a; /* Меняется фон экрана, выбирается здесь */ 
+}
+
+#wrapper{ /* Оболочка страницы сайта */
+  width: 1110px; /* Меняется ширина страницы */
+  margin: 0 auto;
+  background:#FFE4C4; /* Меняется задний фон страницы */
+}
+
+/* Шапка сайта */
+
+#header{
+position:relative; /* Задаём блоку относительное позиционирование для того, чтобы затем размещать, в нём другие элементы и позиционировать относительно его границ поверх фоновой картинки и заголовка */
+  height: 80px; /* Высота шапки */
+  background-color: #BC8F8F; /* Фон шапки */
+   margin-bottom: 2px; /* Нижний отступ шапки от остального контента */
+  border-radius: 50px; /* Закругляются углы блока */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень. Визуально приподнимает блок над оболочкой */
+}
+img{ /* Фоновая картинка в шапке */
+float: left; /* Разрешаем наплывание других элементов на картинку */
+  margin: -40px 0 0 0;} /* Размещаем картинку в блоке header. 1-я и 3-я цифры - двигаем вверх-вниз, 2-я и 4-я цифры - двигаем вправо-влево */
+h1{ /* Заголовок сайта */
+  margin:0 0 10px 80px; /* Заголовок двигается верх-вправо-вниз-влево. */
+  color:#464451; /* Цвет заголовка */
+}
+.nomer{ /*Подзаголовок (номер телефона)*/
+  position:absolute; /* Позиционируем абсолютно подзаголовок, относительно границ блока header. Также можно разместить в шапке сайта ещё другие картинки и абзацы поверх фоновой картинки и заголовка */
+  top:5px; /* Двигается вверх-вниз */
+  left:680px; /* Двигается вправо-влево */
+  font-size: 25px; /* Размер букв подзаголовка */
+  font-style:italic; /* Курсив */
+  font-weight:bold; /* Жирный */
+  color:#464451; /* Цвет букв подзаголовка */
+}
+
+/* Сайдбар (колонка справа) */
+
+#sidebar{ /* Блок сайдбара */
+  background-color: #E6E6FA; /* Фон блока */
+  width: 380px; /* Ширина блока */
+  padding: 10px; /* Отступ текста от краёв */
+  float: right; /* Размещаем блок справа от других элементов, наплывание или обтекание справа). Если делать сайдбар слева, то значение right меняем на left */
+  border-radius: 5px; /* Закругляем углы блока */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Задаём блоку тень */
+}
+.marcer{ /* Галочки маркеры меню */
+  float: left; /* Размещаем слева от текста */
+  margin: 5px 5px 0 0; /* Двигаются вверх-вправо-вниз-влево */
+}
+
+/* Контент (статья) */
+
+#content{ /* Блок контента */
+  margin-bottom: 5px; /* Отступ блока статьи от блока подвала */
+  width: 676px; /* Ширина статьи */
+  padding: 10px; /* Отступ текста от краёв блока */
+  background: #E6E6FA; /* Фон статьи */
+  border-radius: 50px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+.left{ /* Картинка в тексте слева */
+  float: left;
+  margin: 30px 7px 7px 7px;
+}
+.right{ /* Картинка в тексте справа */
+  float: right;
+  margin: 7px 0 7px 7px;
+}
+/* Подвал */
+
+#footer{ /* Блок подвала */
+  height:50px; /* Высота блока подвала */
+  background-color: #BC8F8F; /* Фон блока подвала */
+  margin-bottom: 10px; /* Отступ снизу */
+  border-radius: 20px; /* Закруглённые углы */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень блока */
+}
+.clear{ /* Запрет наплывания. Устанавливается для того, чтобы блок контента, при заполнении текстом и изображениями не наплывал на подвал */
+  clear: both;
+}
+  .fon{ /* Номер телефона */
+  float:left; /* Разрешаем другим элементам обтекать абзац справа */
+  margin:20px 0 0 20px;
+}
+.fax{ /* Номер факса */
+  float:left;
+  margin:20px 0 0 60px;
+}
+.mail{ /* Адрес E-mail */
+  float:left;
+ margin:20px 0 0 60px;
+}
+</style>
+</head>
+<body>
+  <div id="wrapper"> <!--Оболочка страницы-->
+<!--Шапка сайта-->
+    <div id="header">
+<!--Заголовок сайта-->
+      <h1>October 9, 1993</h1>
+<!--Описание (телефон)-->
+        <p class="nomer" <br> Montreal <br> </p>
+<!--Фоновая картинка в шапке сайта-->
+      <img src="">
+    </div>
+<!--Сайдбар-->
+    <div id="sidebar">
+<!--меню-->
+       <p><a href="stat.html">Centre Infotouriste</a></p>
+       <p><a href="interview.html">1001, Square Dorchester</a></p>
+       <p><a href="ask.html">900, Boul. Rene-Levesque Ouest</a></p>
+      <h3>Located in Jean-Drapeau Park across from Montreal s Old Port,
+      there are several ways to get to the Montreal Casino such as by car,
+      mass transit or shuttle</h3>
+
+<!--Картинки маркеров меню (галочки)-->
+        <p><img class="marcer" src="" width="10" height="10"></p>
+        <p><img class="marcer" src="" width="10" height="10"></p>
+        <p><img class="marcer" src="" width="10" height="10"></p>
+<!--Прямая синяя линия-->
+           
+<!--Общая информация в сайдбаре-->
+      <h3></h3>
+    </div>
+<!--Основной контент (статья)-->
+    <div id="content">
+<!--Картинка слева-->
+      <img class="left" src="">
+<!--Заголовок статьи-->
+        <h3>The Montreal Casino</h3>
+<!--Текст статьи-->
+<p>(French: Casino de Montreal) is a casino on the Notre Dame Island in the borough of Ville-Marie in Montreal,
+ Quebec, and is the largest casino in Canada. The casino is open 24 hours a day, seven days a week to patrons 
+ages 18 and older It opened on October 9, 1993.</p>
+<p>History</p>
+<p>In 1992, the government of Quebec created the Societe des casinos du Quebec (SCQ) and tasked them to
+ build casinos in the province. The Montreal Casino was the first among the two to be founded for the
+ project and cost $95 million to build. The casino replaced the Palais des civilisations which used to showcase
+ international cultural exhibitions and used to be home to the French pavilion of Expo 67. The casino received 
+thousands of players within the first few weeks of its opening and 780,000 in its first year It went through
+ its first major expansion in 1993 and its second in 2013. The casino employed 700 people during its opening
+ year; as of 2019, it employs 2,800 people</p>
+<p>The casino consists of three interconnected buildings. Two of these, the France Pavilion
+ and the Quebec Pavilion, were built for Expo 67. The third is an annex built by the casino
+ to the south and east of the main building. An enclosed bridge joins the annex to the former Quebec Pavilion.
+ The main building has six floors, in addition to the annex and the secondary building (with four floors).
+ The casino boasts a gaming floor of over 526,000 sq ft (12.1 acres; 48,900 m2). Within the three structures
+ there are over 3,200 slot machines,[4][5] over 115 gaming tables,[4] Keno facilities, and large number of speed
+ lotteries and virtual games. The casino also contains four restaurants,[6] three bars,[6] a cabaret, and meeting
+ and banquet facilities. The casino is known for certain unconventional structural features for such 
+an establishment, such as its numerous windows and low ceilings. It has been a non-smoking casino since July 2003,
+[citation needed] and the former smoking lounges were closed in May 2006 with the passing
+ of a new provincial law</p>
+
+<!--Картинка справа-->
+      <img class="right" src="">
+
+<p>REKLAMA.</p>
+    </div>
+<!--Запрет наплывания-->
+  <div class="clear"></div>
+<!--Подвал-->
+    <div id="footer">
+      <p class="fon"><strong> </strong> </p>
+      <p class="fax"><strong><br> </strong></p>
+      <p class="mail"><strong><br></strong></p>
+
+    </div>
+  </div>
+</body>
+</html>
+
